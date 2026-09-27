@@ -1,0 +1,984 @@
+#content-area h1,
+#content-area h2,
+#content-area h3,
+#content-area h4,
+#content-area h5,
+#content-area h6 {
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+#content-area p {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+#content-area pre {
+    margin: 0 0 0;
+}
+
+#content-area hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   HIGHSCHOOL - SUBJECT PAGE CSS
+   File: tem.css
+========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+#header {
+    background: rgba(40, 58, 90, 0.9);
+    position: fixed;
+    margin: 0;
+}
+
+#header .menu-toggle {
+    display: none;
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.whole-container {
+    display: flex;
+   margin-top: 72px;
+  background: #e9e8e8;
+   
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  
+
+}
+
+/* =========================================================
+   MAIN CONTENT AREA
+========================================================= */
+
+#content-area {
+
+    flex: 1 ;
+    width: 0;
+    max-width: 100%;
+    margin: 21px 18px 21px ;
+    padding: 0px 25px  0;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-y: hidden;
+    overflow: visible;
+    background-color:  #f9fafc;
+    box-sizing: border-box; 
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* =========================================================
+   CONTENT PRE
+========================================================= */
+#content-area pre {
+
+    flex: 1;
+    
+    max-width: 100%;
+    width: 100%;
+    background-color:  #f9fafc;
+
+    white-space: pre-wrap;  
+    word-break: break-word;
+    padding: 0 0 0;
+    margin:0 0 0 ;
+    margin-top: 0px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow: hidden;
+   
+   
+}
+
+/*======   Sidebar   =======*/
+
+#sidebar {
+   display: block;
+   width: 16rem;
+   flex-shrink: 1;
+    background-color: #e7e9ec;
+    border-right: 1px solid #ccc;
+    transition: transform 0.35s ease-in-out;
+    position: sticky;
+    top: 72px;
+    height: calc(100vh - 70px);
+    margin-top: 0;
+    overflow-x: hidden;
+    font-size: 0.965rem;
+    color: #242020;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+/*==========   Sidebar scrollbar  ========*/
+
+#sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: #e7e9ec;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background: #b7bcc3;
+    border-radius: 10px;
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background: #8d949d;
+}
+
+/* =========================================================
+   SIDEBAR SUBJECT HEADING
+========================================================= */
+
+#sidebar h4 {
+    --heading-duration: 18s;
+    --symbol-duration: 12s;
+    --underline-duration: 0.8s;
+
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 0;
+    font-family:'Poppins';
+    border-bottom: 1px solid #929292;
+    color: #0056b3;
+    font-size: 21px;
+    list-style: none;
+    cursor: pointer;
+
+    animation:
+        sidebarTextGradient
+        var(--heading-duration)
+        ease-in-out
+        infinite;
+    transition:
+        transform 0.5s ease,
+        text-shadow 0.5s ease,
+        letter-spacing 0.5s ease;
+    isolation: isolate;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+
+        
+}
+
+#sidebar h4::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e7e9ec;
+    z-index: -1;
+}
+
+
+/*==== heading icons ======*/
+
+/* =========================================================
+   MATHEMATICAL SYMBOL / ICON SLIDER
+========================================================= */
+
+#sidebar h4 .subject-title {
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-top: 0;
+ padding: 14px 28px 14px ;
+
+}
+
+#sidebar h4 .math-symbol-slot {
+    position: relative;
+    display: inline-block;
+    flex: 0 0 34px;
+    width: 22px;
+    height: 29px;
+    transform: translateY(4px);
+    overflow: visible;
+
+    
+}
+
+#sidebar h4 .math-symbol {
+    position: absolute;
+    left: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    color: #0056b3;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    transform-origin: center;
+    will-change: transform, opacity;
+}
+
+#sidebar h4 .math-symbol i {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    line-height: 1;
+   
+    width: 28px;
+    height: 28px;
+margin-right: 50px;
+
+   margin-top: 11px;
+
+    opacity: 1;
+}
+
+#sidebar h4 .math-symbol video {
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    object-fit: contain;
+    margin-top: 5px;
+    margin-right: 50px;
+    padding: 0;
+
+    border: 0;
+    outline: 0;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+#sidebar h4 .math-symbol img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+   
+   margin-right: 50px;
+    object-fit: contain;
+    object-position: center;
+    border: 0;
+    outline: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* =========================================================
+   SLIDE LEFT
+========================================================= */
+
+#sidebar h4 .math-animation-slide-left {
+    transform: translate3d(30px, 0, 0) scale(.85);
+    transition:
+        opacity 1s ease,
+        transform 1.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+#sidebar h4 .math-animation-slide-left.math-symbol-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* =========================================================
+   SLIDE RIGHT
+========================================================= */
+
+#sidebar h4 .math-animation-slide-right {
+    transform: translate3d(-30px, 0, 0) scale(.85);
+    transition:
+        opacity 1s ease,
+        transform 1.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+#sidebar h4 .math-animation-slide-right.math-symbol-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* =========================================================
+   SLIDE UP
+========================================================= */
+
+#sidebar h4 .math-animation-slide-up {
+    transform: translate3d(0, 25px, 0) scale(.85);
+    transition:
+        opacity 1s ease,
+        transform 1.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+#sidebar h4 .math-animation-slide-up.math-symbol-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* =========================================================
+   SLIDE DOWN
+========================================================= */
+
+#sidebar h4 .math-animation-slide-down {
+    transform: translate3d(0, -25px, 0) scale(.85);
+    transition:
+        opacity 1s ease,
+        transform 1.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+#sidebar h4 .math-animation-slide-down.math-symbol-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* =========================================================
+   SCALE
+========================================================= */
+
+#sidebar h4 .math-animation-scale {
+    transform: scale(.25);
+    transition:
+        opacity 1s ease,
+        transform 1.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+#sidebar h4 .math-animation-scale.math-symbol-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* =========================================================
+   ZOOM
+========================================================= */
+
+#sidebar h4 .math-animation-zoom {
+    transform: scale(1.6);
+    transition:
+        opacity 1s ease,
+        transform 1.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+#sidebar h4 .math-animation-zoom.math-symbol-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* =========================================================
+   ROTATE
+========================================================= */
+
+#sidebar h4 .math-animation-rotate {
+    transform: rotate(-180deg) scale(.5);
+    transition:
+        opacity 1s ease,
+        transform 1.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+#sidebar h4 .math-animation-rotate.math-symbol-visible {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+/* =========================================================
+   BOUNCE
+========================================================= */
+
+#sidebar h4 .math-animation-bounce {
+    transform: translate3d(0, -22px, 0) scale(.75);
+    transition:
+        opacity 1s ease,
+        transform 1.3s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+#sidebar h4 .math-animation-bounce.math-symbol-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 991px) {
+    #sidebar h4 .math-symbol-slot {
+        flex-basis: 30px;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        transform: translateY(3px);
+    }
+
+    #sidebar h4 .math-symbol {
+        width: 30px;
+        height: 30px;
+    }
+
+    #sidebar h4 .math-symbol img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    #sidebar h4 .math-symbol {
+        transition: none !important;
+    }
+}
+
+
+/* =========================================================
+   H4 TEXT GRADIENT ANIMATION
+========================================================= */
+
+@keyframes sidebarTextGradient {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    25% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 0% 100%;
+    }
+
+    75% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+/* =========================================================
+   H4 HOVER
+========================================================= */
+
+#sidebar h4:hover {
+    transform: translateX(2px);
+
+    letter-spacing: 0.7px;
+
+    text-shadow:
+        0 0 8px rgba(0, 86, 179, 0.20),
+        0 0 15px rgba(22, 135, 217, 0.1);
+}
+
+#sidebar h4:hover::before {
+    opacity: 1;
+}
+
+/* =========================================================
+   HOVER UNDERLINE
+   ONLY APPEARS ON HOVER
+========================================================= */
+
+#sidebar h4::after {
+    content: "";
+
+    position: absolute;
+
+    left: 28px;
+    bottom: 9px;
+
+    width: 0;
+    height: 2px;
+
+    border-radius: 5px;
+
+    background: #0056b3;
+
+    pointer-events: none;
+
+    transition:
+        width var(--underline-duration) ease;
+}
+
+#sidebar h4:hover::after {
+    width: 120px;
+}
+
+/* Remove old HTML underline */
+
+#sidebar h4 .heading-underline {
+    display: none !important;
+}
+
+/* =========================================================
+   SIDEBAR LIST
+========================================================= */
+
+#sidebar ul {
+    list-style: none;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+#sidebar li {
+    padding: 15px;
+
+    cursor: pointer;
+
+    border-bottom: 1.5px solid #fff;
+
+    margin: 1px 3px;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+#sidebar li:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+#sidebar li:active {
+    background-color: #007BFF;
+    font-weight: bold;
+    color: #fff;
+}
+
+#sidebar ul li.active {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+#sidebar ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   RIGHT ADS SIDEBAR
+========================================================= */
+
+.ads {
+
+    display: flex;
+    width: 17rem;
+    padding: 1rem;
+    flex-shrink: 1;
+    position: sticky;
+    top: 72px;
+    height: calc(100vh - 70px);
+    box-shadow:
+        0 0 10px rgba(0, 0, 0, 0.1);
+        border-left: 1.5px solid #9acae0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    background-color: cornsilk;
+}
+
+/* =========================================================
+   ADVERTISEMENT LABEL
+========================================================= */
+
+.advertisement-label {
+    font-size: 0.90rem;
+
+    font-weight: 600;
+
+    color: #374151;
+
+    text-align: center;
+
+    letter-spacing: 1ch;
+}
+
+/* =========================================================
+   ADVERTISEMENT BOX
+========================================================= */
+
+.advertisement-box {
+    background-color: #d9f0e6;
+
+    border-radius: 0.375rem;
+
+    padding: 0.5rem 1rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0.5rem;
+
+    width: 100%;
+
+    font-size: small;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   AD LOGO
+========================================================= */
+
+.ad-logo {
+    width: 80px;
+    height: 80px;
+}
+
+/* =========================================================
+   CHAPTER NAVIGATION
+========================================================= */
+
+.nav-buttons {
+    margin: auto;
+
+    width: 100%;
+
+    max-width: 360px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+/* =========================================================
+   NAVIGATION BUTTON
+========================================================= */
+
+.nav-btn {
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 105px;
+    height: 42px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+/* =========================================================
+   NAVIGATION ICON
+========================================================= */
+
+.nav-btn i {
+    font-size: 17px;
+
+    line-height: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    transition:
+        transform 0.3s ease;
+}
+
+/* =========================================================
+   NAVIGATION HOVER
+========================================================= */
+
+.nav-btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.25);
+
+    background: #1d4ed8;
+}
+
+/* Back icon */
+
+.back-btn:hover:not(:disabled) i {
+    transform: translateX(-5px);
+}
+
+/* Next icon */
+
+.next-btn:hover:not(:disabled) i {
+    transform: translateX(5px);
+}
+
+/* =========================================================
+   NAVIGATION CLICK
+========================================================= */
+
+.nav-btn:active:not(:disabled) {
+    transform:
+        translateY(-1px)
+        scale(0.96);
+
+    box-shadow:
+        0 3px 8px rgba(37, 99, 235, 0.2);
+}
+
+/* =========================================================
+   DISABLED BUTTON
+========================================================= */
+
+.nav-btn:disabled {
+    background: #c7cbd1;
+
+    color: #ffffff;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+
+    opacity: 0.75;
+}
+
+/* =========================================================
+   START BUTTON
+========================================================= */
+
+.start-btn {
+    display: inline-block;
+
+    background-color: #007BFF;
+
+    color: white;
+
+    padding: 12px 16px;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+}
+
+/* =========================================================
+   NAVIGATION MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .nav-buttons {
+        max-width: 320px;
+
+        margin-top: 40px;
+
+        gap: 12px;
+    }
+
+    .nav-btn {
+        min-width: 95px;
+
+        height: 40px;
+
+        font-size: 13px;
+
+        padding: 0 13px;
+    }
+
+    .nav-btn i {
+        font-size: 16px;
+    }
+}
+
+/* =========================================================
+   MOBILE RESPONSIVE LAYOUT
+========================================================= */
+
+@media (max-width: 991px) {
+
+    #header .menu-toggle {
+        display: block;
+
+        order: 0;
+
+        font-size: 22px;
+
+        align-items: center;
+
+        margin-right: 10px;
+
+        line-height: 1;
+
+        position: relative;
+
+        color: #fffbfb;
+    }
+
+    .whole-container {
+        flex-direction: column;
+
+        margin-top: 1.8rem;
+    }
+
+    /* =====================================================
+       MOBILE SIDEBAR
+    ===================================================== */
+
+    #sidebar {
+        position: fixed;
+
+        top: 60px;
+        left: 0;
+
+        height: calc(100vh - 70px);
+
+        width: 230px;
+
+        transform: translateX(-100%);
+
+        z-index: 1000;
+    }
+
+    #sidebar.open {
+        transform: translateX(0);
+    }
+
+    /* =====================================================
+       MOBILE H4
+    ===================================================== */
+
+    #sidebar h4 {
+        position: sticky;
+
+        top: 0;
+
+        z-index: 20;
+
+        padding: 15px 30px 1px 30px;
+
+        font-size: 25px;
+    }
+
+    #sidebar h4::after {
+        left: 30px;
+    }
+
+ 
+
+    /* =====================================================
+       MOBILE ADS
+    ===================================================== */
+
+    .ads {
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        padding: 2rem;
+
+        gap: 1rem;
+
+        box-shadow:
+            0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* =====================================================
+       MOBILE CONTENT
+    ===================================================== */
+
+    #content-area {
+        padding: 15px;
+
+        width: 100%;
+
+        border-right: none;
+
+        top: 60px;
+
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
+

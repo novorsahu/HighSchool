@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Highschool</title>
+  <meta name="description" content="Privacy Policy for Highschool explaining what data we collect, how we use it, and your rights." />
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="Privacy Policy | Highschool" />
+  <meta property="og:description" content="How Highschool collects, uses, and protects your information." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/privacy" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Highschool",
+    "url": "https://example.com/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Highschool"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card: #ff0a0a;
+      --muted: #9fb2d8;
+      --text: #312d2d;
+      --accent: #4f8cff;
+      --accent-2: #22c55e;
+      --danger: #ef4444;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 20% -10%, #1a2346 0, var(--bg) 55%) fixed;
+    }
+
+    .container {
+      max-width: 980px;
+      margin-left: 230px;
+      padding: 0 20px;
+    }
+
+    header.card, section.card, footer.card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    header.card { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 8px;
+    }
+
+    h1 { font-size: 1.8rem; margin: 0 0 6px; }
+    h2 { font-size: 1.25rem; margin: 0 0 6px; }
+    h3 { font-size: 1.05rem; margin: 0 0 6px; }
+
+    .muted { color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .kicker {
+      display: inline-flex; gap: 10px; align-items: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1px dashed rgba(255,255,255,0.2);
+      color: var(--muted);
+      border-radius: 999px; padding: 6px 10px; font-size: .85rem;
+    }
+
+    .toc {
+      margin: 20px 0 28px; padding: 16px; border-radius: 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .toc ul { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+    .toc li { margin: 6px 0; break-inside: avoid; }
+
+    section.card { margin-top: 18px; }
+    section.card h2 { display: flex; align-items: center; gap: 10px; }
+
+    .note {
+      border-left: 3px solid var(--accent);
+      background: rgba(79,140,255,0.08);
+      padding: 12px 14px; border-radius: 10px; color: var(--text);
+    }
+
+    .list { padding-left: 18px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    @media (max-width: 720px) {
+      .toc ul { columns: 1; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .footer-meta {
+      display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+      color: var(--muted); font-size: 0.95rem;
+    }
+
+    .chip {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 6px 10px; border-radius: 999px; font-size: .85rem;
+    }
+
+    .btn-top {
+      position: fixed; right: 18px; bottom: 18px; z-index: 50;
+      background: var(--accent); color: white; border: none;
+      padding: 10px 14px; border-radius: 999px; cursor: pointer;
+      box-shadow: 0 8px 20px rgba(79,140,255,0.35);
+    }
+    .btn-top:hover { filter: brightness(1.05); }
+
+    @media print {
+      body { background: #fff; color: #111; }
+      header.card, section.card, footer.card { box-shadow: none; background: #fff; border: 1px solid #eee; }
+      .btn-top { display: none; }
+      a { color: #0b5dd7; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header class="card">
+      <div class="kicker">
+        <span class="badge" title="This page tells you how we handle your data">Privacy Policy</span>
+        <span>Last Updated: <strong>19 August 2025</strong></span>
+      </div>
+      <h1>Privacy Policy – Highschool</h1>
+      <p class="muted">This Privacy Policy explains what information we collect, how we use it, and the choices you have when using our website and services.</p>
+
+      <nav class="toc" aria-label="Table of Contents">
+        <ul>
+          <li><a href="#scope">1. Scope</a></li>
+          <li><a href="#data-we-collect">2. Information We Collect</a></li>
+          <li><a href="#how-we-use">3. How We Use Information</a></li>
+          <li><a href="#cookies">4. Cookies & Tracking</a></li>
+          <li><a href="#third-parties">5. Third‑Party Services</a></li>
+          <li><a href="#legal-basis">6. Legal Basis</a></li>
+          <li><a href="#retention">7. Data Retention</a></li>
+          <li><a href="#security">8. Data Security</a></li>
+          <li><a href="#children">9. Children’s Privacy</a></li>
+          <li><a href="#your-rights">10. Your Rights</a></li>
+          <li><a href="#intl">11. International Transfers</a></li>
+          <li><a href="#changes">12. Changes to This Policy</a></li>
+          <li><a href="#contact">13. Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="scope" class="card" aria-labelledby="scope-h">
+      <h2 id="scope-h">1. Scope</h2>
+      <p>This Privacy Policy applies to <strong>Highschool</strong> (the “Website”, “we”, “us”, or “our”) and covers visitors, students, and registered users who access our content and services at <a href="https://example.com/">https://example.com/</a> (replace with your actual domain).</p>
+    </section>
+
+    <section id="data-we-collect" class="card" aria-labelledby="data-h">
+      <h2 id="data-h">2. Information We Collect</h2>
+      <div class="grid-2">
+        <div>
+          <h3>2.1 Information You Provide</h3>
+          <ul class="list">
+            <li>Contact details such as name and email when you subscribe, sign up, or contact us.</li>
+            <li>Account information (if you create an account): username, password (stored securely).</li>
+            <li>Content you submit (e.g., feedback, comments, forms).</li>
+          </ul>
+        </div>
+        <div>
+          <h3>2.2 Information Collected Automatically</h3>
+          <ul class="list">
+            <li>Usage data: pages visited, time on page, referring URLs.</li>
+            <li>Device and browser information: IP address, device type, operating system, browser type.</li>
+            <li>Approximate location derived from IP (city/country level).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note"><strong>Cookies:</strong> We use cookies and similar technologies to remember preferences and analyze traffic. See <a href="#cookies">Cookies & Tracking</a>.</div>
+    </section>
+
+    <section id="how-we-use" class="card" aria-labelledby="use-h">
+      <h2 id="use-h">3. How We Use Information</h2>
+      <ul class="list">
+        <li>To provide, maintain, and improve our website, courses, and learning resources.</li>
+        <li>To communicate with you (e.g., service updates, newsletters, responses to queries).</li>
+        <li>To personalize content and recommendations.</li>
+        <li>To monitor performance, prevent fraud/abuse, and ensure platform safety.</li>
+        <li>To comply with legal obligations and enforce our Terms.</li>
+      </ul>
+    </section>
+
+    <section id="cookies" class="card" aria-labelledby="cookies-h">
+      <h2 id="cookies-h">4. Cookies & Tracking</h2>
+      <p>Cookies are small files placed on your device to help the site function and analyze usage.</p>
+      <h3>4.1 Types of Cookies</h3>
+      <ul class="list">
+        <li><strong>Essential:</strong> Required for core functionality (e.g., login, security).</li>
+        <li><strong>Preferences:</strong> Remember your settings (e.g., language, theme).</li>
+        <li><strong>Analytics:</strong> Help us understand how the site is used.</li>
+      </ul>
+      <h3>4.2 Your Choices</h3>
+      <ul class="list">
+        <li>You can manage cookies via your browser settings.</li>
+        <li>You may opt out of certain analytics tools if provided.</li>
+      </ul>
+    </section>
+
+    <section id="third-parties" class="card" aria-labelledby="third-h">
+      <h2 id="third-h">5. Third‑Party Services</h2>
+      <p>We may use trusted service providers (e.g., hosting, analytics, email delivery). These providers only process your information on our behalf and under appropriate safeguards.</p>
+      <p>Our site may link to external websites. We are not responsible for their privacy practices. Review their policies when you visit them.</p>
+    </section>
+
+    <section id="legal-basis" class="card" aria-labelledby="legal-h">
+      <h2 id="legal-h">6. Legal Basis for Processing</h2>
+      <ul class="list">
+        <li><strong>Consent:</strong> When you voluntarily subscribe or agree to optional cookies.</li>
+        <li><strong>Contract:</strong> To provide services you request (e.g., account features).</li>
+        <li><strong>Legitimate Interests:</strong> Site security, analytics, product improvement.</li>
+        <li><strong>Legal Obligations:</strong> Compliance with applicable laws and regulations.</li>
+      </ul>
+    </section>
+
+    <section id="retention" class="card" aria-labelledby="ret-h">
+      <h2 id="ret-h">7. Data Retention</h2>
+      <p>We retain personal data only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law. When no longer needed, data is securely deleted or anonymized.</p>
+    </section>
+
+    <section id="security" class="card" aria-labelledby="sec-h">
+      <h2 id="sec-h">8. Data Security</h2>
+      <p>We use technical and organizational measures to protect information against unauthorized access, alteration, disclosure, or destruction. Despite our efforts, no method of transmission or storage is completely secure.</p>
+    </section>
+
+    <section id="children" class="card" aria-labelledby="child-h">
+      <h2 id="child-h">9. Children’s Privacy</h2>
+      <p>Our content is designed for students, but we do not knowingly collect personal information from children under 13. If you believe a child provided personal data, please <a href="#contact">contact us</a> to remove it.</p>
+    </section>
+
+    <section id="your-rights" class="card" aria-labelledby="rights-h">
+      <h2 id="rights-h">10. Your Rights</h2>
+      <p>Depending on your location, you may have rights such as:</p>
+      <ul class="list">
+        <li>Access, correct, or delete your personal information.</li>
+        <li>Object to or restrict certain processing.</li>
+        <li>Withdraw consent at any time (where processing is based on consent).</li>
+        <li>Portability of certain data in a structured, commonly used format.</li>
+        <li>Complain to a data protection authority where applicable.</li>
+      </ul>
+      <p>To exercise your rights, please <a href="#contact">contact us</a>.</p>
+    </section>
+
+    <section id="intl" class="card" aria-labelledby="intl-h">
+      <h2 id="intl-h">11. International Transfers</h2>
+      <p>Your information may be processed in countries other than your own. We take steps to ensure appropriate safeguards are in place, consistent with applicable laws.</p>
+    </section>
+
+    <section id="changes" class="card" aria-labelledby="changes-h">
+      <h2 id="changes-h">12. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy periodically. We will post the updated version on this page and revise the “Last Updated” date above. Significant changes may also be communicated via email or website notice.</p>
+    </section>
+
+    <section id="contact" class="card" aria-labelledby="contact-h">
+      <h2 id="contact-h">13. Contact Us</h2>
+      <p>If you have any questions or requests about this Privacy Policy or our data practices, contact us:</p>
+      <ul class="list">
+        <li>Email: <a href="mailto:novor2004@gmail.com">novor2004@gmail.com</a></li>
+        <li>Phone/WhatsApp: <a href="tel:+917470893545">+91 74708 93545</a></li>
+        <li>Website: <a href="https://example.com/">https://example.com/</a> (replace with your domain)</li>
+        <li>Address: (Optional) Add your city & state here</li>
+      </ul>
+      <p class="muted">For faster processing, include the email used on our site and a clear description of your request.</p>
+    </section>
+
+    <footer class="card">
+      <div class="footer-meta">
+        <span class="chip">© <span id="y"></span> Highschool</span>
+        <span class="chip">This page is for transparency about our data practices.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <button class="btn-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Back to top">↑ Top</button>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

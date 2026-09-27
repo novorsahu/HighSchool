@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> template.com </title>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>  
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+ 
+
+
+
+  <!-- Favicons -->
+  <link href="../../assets/img/favicon.png" rel="icon">
+  <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+
+  <link href="../tem.css" rel="stylesheet">
+  <link href="../../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.9.1
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+<body>
+  
+
+<div id="header"></div>
+
+
+
+
+
+
+  
+<!--====== Whole Container  =====-->
+
+<div class="whole-container">
+    
+    <!--====== Sidebar Start =====-->
+
+    <nav id="sidebar">
+           
+         <h4> HTML Tutorial </h4>        
+          <hr>
+
+       
+        <ul>
+            <li data-key="chap-1.html" onclick="navigateToHash('chap-1', this)">HTML Introduction</li>           
+            <li data-key="headings" onclick="navigateToHash('headings', this)">HTML Headings</li>
+            <li data-key="paragraphs" onclick="navigateToHash('paragraphs', this)">HTML Paragraphs</li>
+            <li data-key="images" onclick="navigateToHash('images', this)">HTML Images</li>
+            <li data-key="links" onclick="navigateToHash('links', this)">HTML Links</li>
+            
+             <li data-key="content/intro" onclick="navigateToHash('intro', this)">HTML Introduction</li>           
+            <li data-key="headings" onclick="navigateToHash('headings', this)">HTML Headings</li>
+            <li data-key="paragraphs" onclick="navigateToHash('paragraphs', this)">HTML Paragraphs</li>
+            <li data-key="images" onclick="navigateToHash('images', this)">HTML Images</li>
+            <li data-key="links" onclick="navigateToHash('links', this)">HTML Links</li>
+            
+          </ul>
+          
+      
+    </nav>
+    
+    <!--=====  content-area  ======-->
+
+ <main id="content-area" data-original-content="">
+    <div class="content-inner">
+      <h1>Welcome to the Content Area</h1>
+      <p>Yeh content body ke sath scroll hoga. Alag se scroll nahi aayega.</p>
+
+        
+<pre> 
+  
+You said:
+Kya me multiple categories ke content upload kar sakta hu 
+
+
+ChatGPT said:
+Haan, bilkul — tum Twitter (X) par multiple categories ke content upload kar sakte ho. Bahut saare creators aisa hi karte hain. Bas ek baat ka dhyan rakhna hota hai:
+
+Tips for Posting Multiple Categories:
+Audience Clarity:
+Thoda time lagta hai audience ko samajhne mein ki tumhara account kis type ka content deta hai. Agar categories mix kar rahe ho, to ek pattern banao (e.g. Monday – motivation, Wednesday – tech, Friday – memes).
+
+Profile Optimization:
+Bio mein likho ki tum kya-kya share karte ho (e.g. "Tech | Motivation | Daily Facts").
+
+Hashtags ka Use:
+Har category ke relevant hashtags use karo taaki woh right audience tak pahuche.
+
+Consistency:
+Har category ka content barabar frequency se post karo, taaki kisi bhi interest group ka engagement kam na ho.
+
+Thread Format:
+Educational ya tech content thread mein do, jabki memes aur opinions short tweets ho sakte hain.
+
+Agar chaho to main tumhare liye ek multi-category content calendar ya sample tweets design kar sakta hoon. Tum kis-kis category ko include karna chahte ho?
+
+      </pre>
+      
+    </div>
+  </main>
+
+
+
+
+
+
+ <!-- Advertisement Right sidebar -->
+
+   <aside class="ads">
+
+     <div class="advertisement-label"> ADVERTISEMENT </div>
+
+
+
+    <div class="advertisement-box">
+     <img alt="HighSchool" class="ad-logo" height="40" src="https://storage.googleapis.com/a1aa/image/d4580840-38a1-4d40-975b-57ca7127efb5.jpg" width="80"/>
+     <h5 class="ad-title"> HTML Certification Course   </h5>
+
+     
+     <button aria-label="Check it out" class="ad-button">   CHECK IT OUT! </button>
+
+     <img alt="Smiling woman with white shirt and yellow pants holding tablet, on light green background" class="ad-image" height="280" src="https://storage.googleapis.com/a1aa/image/ea35c160-64a2-446d-56ef-c929a1e8c3d9.jpg" width="160"/>
+    </div>
+   </aside>
+
+</div>
+
+
+
+
+
+
+<div id="footer"> </div>
+
+
+
+<div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+
+  
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
+
+  <script src="../tem.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

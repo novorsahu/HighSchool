@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.port": 5503,
+    "search.exclude": {
+        "": true
+    },
+    "files.exclude": {
+        "": true
+    }
+}

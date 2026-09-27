@@ -1,0 +1,266 @@
+
+  /* ===== Mobile Responsive Layout ======= */
+
+@media (max-width: 768px) {
+
+        #header {
+          display: flex;
+        justify-content: space-between; /* Ensure content spreads out */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 70px; /* Minimum height for mobile header */
+        top: 0; /* More vertical padding for touch targets */
+        justify-content: space-between; /* Space out toggle, logo, etc. */
+        align-items: center; /* Vertically center items */
+        line-height: 2;
+      }
+
+          #header .menu-toggle  {
+        display: block;
+        order: 0;
+        align-items: center;
+        margin-right: px;
+        line-height: 2;
+        position: relative; /* Relative to header */
+        /* Removed top/left as header flex handles position */
+    }
+
+    #header .menu-toggle i {
+      align-items: center;
+    }
+
+      .search-container {
+
+        display: none;
+      }
+
+      .navbar ul li {
+        display: none;
+      }
+
+
+      #header .menu {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        position: relative; /* Relative to header */
+        /* Removed top/left as header flex handles position */
+    }
+
+    }
+  /* ===== Mobile Responsive Layout ======= */
+
+@media (max-width: 768px) {
+
+        #header {
+          display: flex;
+        justify-content: space-between; /* Ensure content spreads out */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 70px; /* Minimum height for mobile header */
+        top: 0; /* More vertical padding for touch targets */
+        justify-content: space-between; /* Space out toggle, logo, etc. */
+        align-items: center; /* Vertically center items */
+        line-height: 2;
+      }
+
+          #header .menu-toggle  {
+        display: block;
+        order: 0;
+        align-items: center;
+        margin-right: px;
+        line-height: 2;
+        position: relative; /* Relative to header */
+        /* Removed top/left as header flex handles position */
+    }
+
+    #header .menu-toggle i {
+      align-items: center;
+    }
+
+      .search-container {
+
+        display: none;
+      }
+
+      .navbar ul li {
+        display: none;
+      }
+
+
+      #header .menu {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        position: relative; /* Relative to header */
+        /* Removed top/left as header flex handles position */
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+      #header .logo  {
+      padding-left: 0px;
+      margin-left: 0px;
+       padding: 0; /* Remove extra padding for mobile */
+        font-size: 24px; /* Slightly smaller font size */
+    }
+
+    #header .logo a {
+        padding: 0; /* Remove extra padding */
+    }
+
+     #header .home-link {
+        font-size: 24px; /* Make home icon touch-friendly */
+        margin-right: 10px; /* Space from logo */
+    }
+
+
+    #header .navbar {
+      display: none;
+    }
+
+
+
+    
+
+    .search-container {
+        display: non; /* Hide desktop search bar on small screens if you use mobile specific search */
+        width: 100%; /* Take full width */
+        order: 3; /* Push it to the next line below logo and toggle */
+        margin-top: 10px; /* Space from elements above */
+        display: none; /* Hide by default, can be toggled by JS */
+      }
+
+
+.mobile-search-icon {
+        display: block; /* Show this icon on mobile */
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        margin-left: 15px; /* Space from other elements */
+        order: 2; /* Position it strategically */
+    }
+    
+
+search-container {
+  display: block;
+  width: 25px;
+  margin-left: 60px;
+  
+
+}
+
+
+
+    .container {
+      flex-direction: column;
+    }
+  
+    #sidebar {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      height: calc(100vh - 70px);
+      width: 220px;
+      transform: translateX(-100%);
+      z-index: 1000;
+    }
+  
+    #sidebar.open {
+      transform: translateX(0);
+    }
+
+    /* Right sidebar - Media Query for Ads */
+
+    .ads {
+        display: flex; /* Hide ads on smaller screens by default */
+      flex-direction: column;
+      width: 27rem;
+      padding: 2rem;
+      gap: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+
+    /* #content-area for mobile: No specific changes needed here unless it should take full width */
+    #content-area {
+        padding: 15px; /* Slightly less padding on mobile */
+        width: 100%; /* Take full width on mobile */
+        border-right: none; /* No border on right */
+        
+    }
+  
+/* Footer adjustments for mobile */
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-bottom .copyright,
+    .footer-bottom .powered {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+
+
+    .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 26px; /* Adjust padding */
+    padding-bottom: 26px;
+  }
+
+   .footer .copyright , .footer .powered
+   {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .footer .powered {
+    padding-top: 18px  ;
+  }
+
+
+ } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+addEventListener(type: "click", listener: 
+  (this: HTMLElement, ev: PointerEvent) => any, options?:
+ boolean | AddEventListenerOptions): void
+
+
+
+
+
+
+
+
+
+
+
+
+

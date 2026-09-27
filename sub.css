@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden; /* Ensures the image doesn't overflow the rounded corners */
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-image-container {
+    position: relative;
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.duration-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fca311;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.course-details {
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.difficulty {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.difficulty.beginner {
+    color: #4CAF50; /* Green color for beginner */
+}
+
+.difficulty.expert {
+    color: #f44336; /* Red color for expert */
+}
+
+.difficulty.all-levels {
+    color: #36a3f4; /* Blue color for all levels */
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+    line-height: 1.4;
+    min-height: 3rem; /* Ensures cards have a consistent title height */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    color: #FFC107; /* Yellow color for stars */
+}
+
+.rating p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+.rating .fas.fa-star.filled {
+    color: #FFC107;
+}
+
+.rating .fas.fa-star {
+    color: #ccc; /* Unfilled stars */
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-top: auto; /* Pushes the price and stats to the bottom */
+}
+
+.price.free {
+    color: #4CAF50;
+}
+
+.course-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+    border-top: 1px solid #eee;
+    padding-top: 0.5rem;
+}
+
+.browse-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.browse-button:hover {
+    background-color: #45a049;
+}
