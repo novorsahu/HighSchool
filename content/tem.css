@@ -435,29 +435,7 @@ margin-right: 50px;
     transform: translate3d(0, 0, 0) scale(1);
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
 
-@media (max-width: 991px) {
-    #sidebar h4 .math-symbol-slot {
-        flex-basis: 30px;
-        width: 30px;
-        height: 30px;
-        margin-left: 10px;
-        transform: translateY(3px);
-    }
-
-    #sidebar h4 .math-symbol {
-        width: 30px;
-        height: 30px;
-    }
-
-    #sidebar h4 .math-symbol img {
-        width: 25px;
-        height: 25px;
-    }
-}
 
 /* =========================================================
    REDUCED MOTION
@@ -837,6 +815,16 @@ margin-right: 50px;
     border-radius: 50%;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
    NAVIGATION MOBILE
 ========================================================= */
@@ -982,3 +970,26 @@ margin-right: 50px;
 
 
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 991px) {
+    #sidebar h4 .math-symbol-slot {
+        flex-basis: 30px;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        transform: translateY(3px);
+    }
+
+    #sidebar h4 .math-symbol {
+        width: 30px;
+        height: 30px;
+    }
+
+    #sidebar h4 .math-symbol img {
+        width: 25px;
+        height: 25px;
+    }
+}
