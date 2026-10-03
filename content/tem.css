@@ -610,7 +610,7 @@ margin-right: 50px;
     align-items: center;
     gap: 1rem;
     box-sizing: border-box;
-    background-color: cornsilk;
+    background-color: #fff
 }
 
 /* =========================================================
@@ -825,6 +825,21 @@ margin-right: 50px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
    NAVIGATION MOBILE
 ========================================================= */
@@ -878,92 +893,76 @@ margin-right: 50px;
         color: #fffbfb;
     }
 
-    .whole-container {
-        flex-direction: column;
+   
+   
 
-        margin-top: 1.8rem;
-    }
 
-    /* =====================================================
-       MOBILE SIDEBAR
-    ===================================================== */
-
-    #sidebar {
-        position: fixed;
-
-        top: 60px;
-        left: 0;
-
-        height: calc(100vh - 70px);
-
-        width: 230px;
-
-        transform: translateX(-100%);
-
-        z-index: 1000;
-    }
-
-    #sidebar.open {
-        transform: translateX(0);
-    }
-
-    /* =====================================================
-       MOBILE H4
-    ===================================================== */
-
-    #sidebar h4 {
-        position: sticky;
-
-        top: 0;
-
-        z-index: 20;
-
-        padding: 15px 30px 1px 30px;
-
-        font-size: 25px;
-    }
-
-    #sidebar h4::after {
-        left: 30px;
-    }
-
- 
-
-    /* =====================================================
-       MOBILE ADS
-    ===================================================== */
-
-    .ads {
-        display: flex;
-
-        flex-direction: column;
-
-        width: 100%;
-
-        padding: 2rem;
-
-        gap: 1rem;
-
-        box-shadow:
-            0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    /* =====================================================
-       MOBILE CONTENT
-    ===================================================== */
-
-    #content-area {
-        padding: 15px;
-
-        width: 100%;
-
-        border-right: none;
-
-        top: 60px;
-
-        box-sizing: border-box;
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -971,25 +970,472 @@ margin-right: 50px;
 
 
 /* =========================================================
-   MOBILE
+   HIGHSCHOOL - MOBILE RESPONSIVE
+   768px AND BELOW
 ========================================================= */
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+
+    /* =====================================================
+       MAIN CONTAINER
+    ===================================================== */
+
+    .whole-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-top: 60px;
+        
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+
+    }
+
+
+    /* =====================================================
+       MAIN CONTENT AREA
+    ===================================================== */
+
+    #content-area {
+
+        font-size: 12.5px;
+        font-family:sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+
+        flex: none;
+        width: auto;
+        max-width: none;
+        margin: 6px 6px 6px;
+        padding: 9px ;
+        border-radius: 5px;
+        line-height: 1.6;
+        
+        background: #fff;
+        box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        overflow: visible;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        white-space: pre-wrap;
+   
+        
+  
+
+    
+    }
+
+
+   /* =====================================================
+       PRE / CHAPTER CONTENT
+    ===================================================== */
+
+    #content-area pre {
+
+        font-size: 12.5px;
+        font-family:sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 1px;
+        padding: 0px 3px 0px;
+        box-sizing: border-box;
+        
+        background: #fff;
+        font-size: 14px;
+        line-height: 1.6;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        overflow-x: hidden;
+        overflow-y: visible;
+        border-radius: 4px;
+        
+    }
+
+
+
+    /* =====================================================
+       HEADINGS
+    ===================================================== */
+
+    #content-area h1,
+    #content-area h2,
+    #content-area h3,
+    #content-area h4,
+    #content-area h5,
+    #content-area h6 {
+
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+
+    /* =====================================================
+       PARAGRAPH
+    ===================================================== */
+
+    #content-area p {
+
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: 8px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+
+ 
+
+
+    /* =====================================================
+       HR
+    ===================================================== */
+
+    #content-area hr {
+
+        width: 100%;
+        max-width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       IMAGES
+    ===================================================== */
+
+    #content-area img {
+
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       VIDEO
+    ===================================================== */
+
+    #content-area video {
+
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       IFRAME / EMBED
+    ===================================================== */
+
+    #content-area iframe,
+    #content-area embed {
+
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       TABLE
+    ===================================================== */
+
+    #content-area table {
+
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    #content-area th,
+    #content-area td {
+
+        max-width: 100%;
+        padding: 6px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+
+    /* =====================================================
+       LONG TEXT / LINKS
+    ===================================================== */
+
+    #content-area a {
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+
+    /* =====================================================
+       CHAPTER NAVIGATION
+    ===================================================== */
+
+    .nav-buttons {
+
+        width: 100%;
+        max-width: 320px;
+        margin: 35px auto 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    .nav-btn {
+
+        min-width: 90px;
+        height: 40px;
+
+        padding: 0 12px;
+
+        font-size: 13px;
+
+        gap: 6px;
+
+        border-radius: 7px;
+    }
+
+    .nav-btn i {
+
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       SIDEBAR
+    ===================================================== */
+
+    #sidebar {
+
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 230px;
+        height: calc(100dvh - 60px);
+        transform: translateX(-100%);
+        z-index: 1000;
+        overflow-x: hidden;
+        overflow-y: auto;
+        box-sizing: border-box;
+ 
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        scroll-behavior: smooth;
+        transition: transform 0.3s ease;
+        /* Avoid flex-related scrolling problems */
+        display: block;
+
+
+    }
+
+    #sidebar.open {
+
+        transform: translateX(0);
+    }
+
+
+      /* =====================================================
+       SIDEBAR SCROLLBAR
+    ===================================================== */
+
+    #sidebar::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #sidebar::-webkit-scrollbar-track {
+         background: #e7e9ec;
+        border-radius: 10px;
+
+    }
+
+    #sidebar::-webkit-scrollbar-thumb {
+        background: #b7bcc3;
+        border-radius: 10px;
+
+         background: rgba(82, 120, 185, 0.7);
+    border-radius: 10px;
+    border: 1px solid #e7e9ec;
+    }
+
+
+    /* =====================================================
+       SIDEBAR HEADING
+    ===================================================== */
+
+    #sidebar h4 {
+
+        position: sticky;
+        top: 0;
+        z-index: 20;
+
+        width: 100%;
+        padding: 1px 0px 0px;
+        margin: 0;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+ 
+
+    #sidebar h4::after {
+        left: 30px;
+    }
+
+    /* =====================================================
+       SIDEBAR LIST
+    ===================================================== */
+
+    #sidebar ul {
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #sidebar li {
+
+        width: calc(100% - 6px);
+        padding: 13px 12px;
+        margin: 1px 3px;
+        box-sizing: border-box;
+        font-size: 14px;
+           
+    }
+
+
+    /* =====================================================
+       SIDEBAR ICON
+    ===================================================== */
+
     #sidebar h4 .math-symbol-slot {
-        flex-basis: 30px;
-        width: 30px;
-        height: 30px;
-        margin-left: 10px;
+
+        flex-basis: 28px;
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+
         transform: translateY(3px);
     }
 
     #sidebar h4 .math-symbol {
-        width: 30px;
-        height: 30px;
+
+        width: 25px;
+        height: 25px;
+
+        font-size: 21px;
+    }
+
+    #sidebar h4 .math-symbol i {
+
+        width: 24px;
+        height: 24px;
+
+        font-size: 21px;
     }
 
     #sidebar h4 .math-symbol img {
-        width: 25px;
-        height: 25px;
+
+        width: 23px;
+        height: 23px;
+    }
+
+    #sidebar h4 .math-symbol video {
+
+        width: 23px;
+        height: 23px;
+    }
+
+
+    /* =====================================================
+       RIGHT ADS
+    ===================================================== */
+
+    .ads {
+
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        top: auto;
+       background-color: #fff;
+    
+        box-sizing: border-box;
+        flex-direction: column;
+         gap: 1rem;
+         margin: 3px 3px 3px;
+            box-shadow:
+            0 0 10px rgba(0, 0, 0, 0.2);
+
+
+
+
+              display: flex;
+
+        width: calc(100% - 16px);
+        max-width: calc(100% - 16px);
+
+        margin: 8px;
+        padding: 15px;
+        height: auto;
+        position: relative;
+        top: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        box-sizing: border-box;
+        /* Desktop border remove */
+        border-left: none;
+        /* Desktop shadow remove */
+        box-shadow: none;
+       
+    }
+    
+
+    
+
+
+
+    /* =====================================================
+       ADVERTISEMENT BOX
+    ===================================================== */
+
+    .advertisement-box {
+
+        width: 100%;
+
+        padding: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       AD LOGO
+    ===================================================== */
+
+    .ad-logo {
+
+        width: 65px;
+        height: 65px;
     }
 }
+

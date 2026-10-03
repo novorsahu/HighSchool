@@ -23,7 +23,10 @@ const topicOrder = [
     "chap-9",
     "chap-10",
     "chap-11",
-    "chap-12"
+    "chap-12",
+    "chap-13",
+    "chap-14",
+    "chap-15"
 ];
 
 
@@ -62,7 +65,28 @@ function closeSidebarOnMobile() {
 }
 
 
+/* =========================================================
+   CLOSE SIDEBAR WHEN SUBJECT HEADING (H4) IS CLICKED
+========================================================= */
 
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sidebar = document.getElementById("sidebar");
+    const sidebarHeading = sidebar?.querySelector("h4");
+
+    if (!sidebar || !sidebarHeading) return;
+
+    sidebarHeading.addEventListener("click", function () {
+
+        // Close mobile sidebar
+        sidebar.classList.remove("open");
+
+        // Remove any inline transform if present
+        sidebar.style.transform = "";
+
+    });
+
+});
 
 
 
